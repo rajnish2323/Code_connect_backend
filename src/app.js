@@ -12,9 +12,10 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://code-connect-git-main-rajnish-kumar-sharmas-projects.vercel.app",
   credentials: true,
 }));
+
 
 // Routers
 const AuthRouter = require('./router/auther');
