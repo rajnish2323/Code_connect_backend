@@ -1,7 +1,7 @@
 const express = require('express');
-const connectdb = require('./config');
-const User = require('./models/user.js');
-const usersignupdata = require('./utils/validator');
+const connectdb = require('../config.js');
+const User = require('../models/user.js');
+const usersignupdata = require('../utils/validator.js');
 const bcrypt = require('bcryptjs'); // safer for Vercel
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
@@ -17,10 +17,10 @@ app.use(cors({
 }));
 
 // Routers
-const AuthRouter = require('./router/auther');
-const profileRouter = require('./router/profile');
-const requestRouter = require('./router/request'); 
-const userRouter = require('./router/user');
+const AuthRouter = require('../router/auther.js');
+const profileRouter = require('../router/profile.js');
+const requestRouter = require('../router/request.js'); 
+const userRouter = require('../router/user.js');
 
 app.use('/', AuthRouter);
 app.use('/', profileRouter);
