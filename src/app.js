@@ -38,7 +38,7 @@ connectdb()
     console.error("❌ Connection failed:", err);
   });
 
-// Export handler for Vercel
+
 module.exports = (req, res) => {
   if (!isDbConnected) {
     res.status(503).send('Database not connected');

@@ -1,9 +1,9 @@
 {
   "name": "dry",
   "version": "1.0.0",
-  "main": "api/app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node api/app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
